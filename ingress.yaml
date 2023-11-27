@@ -7,7 +7,8 @@ metadata:
 spec:
   # ingressClassName: addon-http-application-routing
   rules:
-  - http:
+  - host: portfolio.saqlain.tech
+    http:
       paths:
       - path: /
         pathType: Prefix
@@ -16,3 +17,7 @@ spec:
             name: hello-kubernetes
             port:
               number: 80
+  tls:
+  - hosts:
+    - portfolio.saqlain.tech
+    secretName: letsencrypt-prod
