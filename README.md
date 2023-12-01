@@ -34,6 +34,11 @@ The portfolio website operates within Docker containers:
 
 - **Containerization:** Packaging website code and its dependencies into Docker containers, facilitating seamless deployment, and enhancing manageability.
 
+### Ingress and HTTPS Traffic using cert-manager
+
+- **Secure Traffic Routing with Ingress:** Implementing Kubernetes Ingress for efficient traffic routing and load balancing, ensuring website availability and responsiveness.
+- **HTTPS Configuration using cert-manager:** Enabling secure HTTPS access to the website by configuring certificates via cert-manager within Kubernetes, enhancing website security and encryption.
+
 ## Usage
 
 1. **Deploying Azure Resources with Terraform:**
